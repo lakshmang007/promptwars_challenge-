@@ -2,6 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatWindow = document.getElementById('chatWindow');
     const userInput = document.getElementById('userInput');
     const sendBtn = document.getElementById('sendBtn');
+    const venueSelect = document.getElementById('venueSelect');
+    const venueMap = document.getElementById('venueMap');
+
+    // Handle Venue Change
+    venueSelect.addEventListener('change', (e) => {
+        const newVenue = e.target.value;
+        const venueText = e.target.options[e.target.selectedIndex].text;
+        
+        // Update iframe source
+        venueMap.src = `https://maps.google.com/maps?q=${newVenue}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+        
+        // Log the change dynamically in the Smart Assistant
+        addMessage(`System updating parameters... Venue context shifted to ${venueText}. Recalculating density models for external boundaries.`, 'ai');
+    });
 
     // Assistant Data & Keywords for Contextual Decision Making
     const knowledgeBase = {

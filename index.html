@@ -36,9 +36,18 @@
             </div>
 
             <div class="map-container">
-                <p class="map-title">Live Venue Map (Google Maps)</p>
+                <div class="map-header">
+                    <p class="map-title">Live Context Map</p>
+                    <select id="venueSelect" class="venue-dropdown">
+                        <option value="Chinnaswamy+Stadium+Bengaluru">🏟️ Chinnaswamy</option>
+                        <option value="Wankhede+Stadium+Mumbai">🏟️ Wankhede</option>
+                        <option value="Commercial+Street+Bengaluru">🛍️ Commercial St</option>
+                        <option value="Kempegowda+International+Airport+Bengaluru">✈️ KIAL Airport</option>
+                    </select>
+                </div>
                 <!-- Meaningful integration of Google Services -->
                 <iframe 
+                    id="venueMap"
                     src="https://maps.google.com/maps?q=Chinnaswamy+Stadium+Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
                     height="100%" 
