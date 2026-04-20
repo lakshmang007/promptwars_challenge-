@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AegisFlow | Smart Crowd Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Dashboard -->
+        <aside class="sidebar glass-panel">
+            <div class="logo-area">
+                <span class="material-symbols-outlined logo-icon">blur_on</span>
+                <h1>AegisFlow</h1>
+            </div>
+            
+            <div class="status-modules">
+                <div class="module warning">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <p class="label">High Density Alert</p>
+                        <p class="value">Gate B Bottleneck</p>
+                    </div>
+                </div>
+                <div class="module good">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <div>
+                        <p class="label">Virtual Queues</p>
+                        <p class="value">Flowing Smoothly</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <p class="map-title">Live Venue Map (Google Maps)</p>
+                <!-- Meaningful integration of Google Services -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg);" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </aside>
+
+        <!-- Main Chat Assistant -->
+        <main class="chat-section glass-panel">
+            <header class="chat-header">
+                <div>
+                    <h2>Aegis AI Assistant</h2>
+                    <p>Urban Crowding & Flow Expert</p>
+                </div>
+                <span class="material-symbols-outlined">smart_toy</span>
+            </header>
+            
+            <div class="chat-window" id="chatWindow">
+                <div class="message ai-message">
+                    <p>System initialized. Welcome to AegisFlow. I am monitoring the venue. How can I assist with crowd management today?</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Ask Aegis (e.g. 'Route Gate B to Blue Path')" autocomplete="off">
+                <button id="sendBtn">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
