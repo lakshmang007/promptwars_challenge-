@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'gate b': 'I am detecting a 15% increase above normal density at Gate B. Recommending shifting the physical stanchions 5 meters to the right, and deploying Pompeian Virtual AR marker "Blue Falcon" to reroute traffic.',
         'food court': 'Virtual queues for the Food Court are currently steady. The average wait time is 4 minutes. Recommend keeping standard flow.',
         'emergency': 'INITIATING CENTURION PROTOCOL. Sending immediate audio-radio alerts to all staff in Sector 4. Opening all Colosseum Radial exits.',
+        'push': '⚠️ URGENT CROWD SURGE: 1. Keep your feet spread for balance. 2. Fold arms in front of your chest (boxer stance) to protect your lungs/ribcage. 3. Do NOT push back against the crowd. 4. Dial 100 (Police) / 108 (Medical). Alerting ground staff.',
+        'stampede': '⚠️ URGENT CROWD SURGE: 1. Keep your feet spread for balance. 2. Fold arms in front of your chest (boxer stance) to protect your lungs/ribcage. 3. Do NOT push back against the crowd. 4. Dial 100 (Police) / 108 (Medical). Alerting ground staff.',
+        'safety': '⚠️ URGENT CROWD SURGE: 1. Keep your feet spread for balance. 2. Fold arms in front of your chest (boxer stance) to protect your lungs/ribcage. 3. Do NOT push back against the crowd. 4. Dial 100 (Police) / 108 (Medical). Alerting ground staff.',
         'hello': 'Hello! AegisFlow active. I can provide real-time density metrics, routing instructions, and staff coordination.',
         'help': 'You can ask me things like: "Status at Gate B?", "Route traffic away from food court", or trigger an "Emergency".'
     };
